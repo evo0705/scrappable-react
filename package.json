@@ -9,7 +9,7 @@
     "react-scripts": "1.1.0"
   },
   "scripts": {
-    "start": "serve -s ./build",
+    "start": "npm start",
     "build": "react-scripts build",
     "postbuild": "react-snap",
     "test": "react-scripts test --env=jsdom",
