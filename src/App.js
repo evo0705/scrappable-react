@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react"
+import { Link } from "react-router-dom"
+import logo from "./logo.svg"
+import "./App.css"
 import { Helmet } from "react-helmet"
 
 class App extends Component {
@@ -14,15 +15,16 @@ class App extends Component {
           <meta name="keywords" content="react,scrappable"/>
         </Helmet>
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <img src={logo} className="App-logo" alt="logo"/>
+          <h1 className="App-title">Welcome to Scrappable React</h1>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Link to={{ pathname: "/about" }}>About Us</Link>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
